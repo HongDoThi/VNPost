@@ -1,0 +1,188 @@
+@media screen and (max-width: 414px) {
+    .nav {
+        .nav__list {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+    }
+    .content {
+        .content__col {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+            &:nth-child(3) {
+                padding: 30px 0;
+                .heading {
+                    padding: 0 21px;
+                }
+            }
+            &:nth-child(1) {
+                height: 30vh;
+                .sidebar-position {
+                    span {
+                        display: block;
+                    }
+                    .collapse-sub {
+                        padding-left: 20px;
+                        .sidebar-collapse {
+                            width: 100%;
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mt--mb {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 910px) {
+    .content {
+        .content__col {
+            &:nth-child(2) {
+                flex-basis: 30%;
+                max-width: 30%;
+            }
+            &:nth-child(3) {
+                flex-basis: 65%;
+                max-width: 65%;
+                &.small {
+                    flex-basis: 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 909px) and (min-width: 769px) {
+    .content {
+        .content__col {
+            &:nth-child(1) {
+                flex-basis: 50%;
+                max-width: 50%;
+                .sidebar-position {
+                    span {
+                        display: block;
+                    }
+                    .collapse-sub {
+                        padding-left: 20px;
+                        .sidebar-collapse {
+                            width: 100%;
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                flex-basis: 50%;
+                max-width: 50%;
+                .search__box {
+                    input {
+                        width: 60%;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .content {
+        .content__col {
+            &:nth-child(1) {
+                flex-basis: 30%;
+                max-width: 30%;
+                .sidebar-position {
+                    span {
+                        display: block;
+                    }
+                    .collapse-sub {
+                        padding-left: 20px;
+                        .sidebar-collapse {
+                            width: 100%;
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                flex-basis: 70%;
+                max-width: 70%;
+            }
+            &:nth-child(3) {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .mt--mb {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) and (min-width: 414px) {
+    .content {
+        .content__col {
+            &:nth-child(1) {
+                flex-basis: 40%;
+                max-width: 40%;
+                .sidebar-position {
+                    span {
+                        display: block;
+                    }
+                    .collapse-sub {
+                        padding-left: 20px;
+                        .sidebar-collapse {
+                            width: 100%;
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                flex-basis: 60%;
+                max-width: 60%;
+            }
+            &:nth-child(3) {
+                flex-basis: 100%;
+                max-width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+    .mt--mb {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 909px) {
+    .content {
+        .content__col {
+            &:nth-child(1) {
+                .heading {
+                    i {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
