@@ -33,7 +33,7 @@ i.left {
 }
 
 i {
-    font-size: 1.1rem!important;
+    font-size: 1.5rem!important;
 }
 
 i.right {
@@ -42,11 +42,6 @@ i.right {
 
 input {
     outline: none;
-    font-size: 1rem;
-}
-
-label {
-    font-size: 1rem;
 }
 
 
@@ -69,7 +64,7 @@ header {
         justify-content: flex-end;
         flex-basis: 50%;
         max-width: 50%;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -79,11 +74,11 @@ header {
 .nav {
     background-color: #007bff;
     ul.nav__list {
-        height: 30px;
+        height: 40px;
         padding-left: 7px;
         li.nav__item {
             height: 100%;
-            line-height: 30px;
+            line-height: 40px;
             display: inline-block;
             a.nav__link {
                 text-transform: uppercase;
@@ -91,7 +86,7 @@ header {
                 padding: 0 10px;
                 display: inline-block;
                 height: 100%;
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
             &:hover {
                 background-color: #FCB71E;
@@ -105,15 +100,17 @@ header {
 
 .content {
     margin-top: 5px;
-    justify-content: flex-start;
+    justify-content: space-between;
     overflow: hidden;
     flex-wrap: wrap;
     .content__col {
         &:nth-child(1) {
             flex-basis: 3%;
             max-width: 3%;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
             transition: all 0.5s ease;
+            margin: 5px;
+            font-size: 1.3rem;
             &.open {
                 flex-basis: 18%;
                 max-width: 18%;
@@ -158,20 +155,57 @@ header {
                 cursor: pointer;
                 padding: 0 12px;
                 align-items: center;
+                justify-content: center;
+                .collapse-sub#_one {
+                    .sidebar-collapse {
+                        span {
+                            display: block;
+                        }
+                    }
+                    &.show {
+                        .sidebar-collapse {
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .collapse-sub#_one {
+                    .sidebar-collapse {
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    margin-top: 65px;
+                }
                 .dflex {
                     height: 100%;
                     align-items: center;
+                    justify-content: center;
                 }
                 .collapse-sub {
                     transition: all 0.5s;
-                    opacity: 1;
-                    height: auto;
-                    &.pd {
-                        padding-left: 20px;
+                    &:first-child {
+                        &.show {
+                            opacity: 1;
+                            height: auto;
+                        }
+                        &.pd {
+                            padding-left: 20px;
+                        }
                     }
-                    &.hidden {
-                        height: 0;
-                        opacity: 0;
+                    &:nth-child(2) {
+                        opacity: 1;
+                        height: auto;
+                        &.hidden {
+                            height: 0;
+                            opacity: 0;
+                        }
+                        &.pd {
+                            padding-left: 20px;
+                        }
                     }
                 }
                 i.left {
@@ -206,7 +240,9 @@ header {
         &:nth-child(2) {
             flex-basis: 25%;
             max-width: 25%;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+            margin: 5px;
+            font-size: 1.3rem;
             .heading {
                 h4 {
                     text-transform: uppercase;
@@ -238,12 +274,14 @@ header {
             }
         }
         &:nth-child(3) {
-            flex-basis: 70%;
-            max-width: 70%;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.06);
+            flex-basis: 68%;
+            max-width: 68%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+            margin: 5px;
+            font-size: 1.3rem;
             &.small {
-                flex-basis: 55%;
-                max-width: 55%;
+                flex-basis: 54%;
+                max-width: 54%;
             }
             .heading {
                 h4 {

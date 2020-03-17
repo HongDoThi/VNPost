@@ -10,7 +10,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/58c378b9ed.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
@@ -54,24 +55,37 @@
         <!-- start content -->
         <section class="content dflex">
             <div class="content__col">
-                <div class="heading"><i class="fa fa-align-right"></i></div>
-                <div class="sidebar-position dflex">
-                    <i class="left fa fa-sitemap"></i>
-                    <span class="font-weight-bold">Danh mục hệ thống</span>
+                <div class="heading"><i class="fa fa-indent"></i></div>
+                <div class="sidebar-position">
+                    <div class="dflex">
+                        <i class="left fa fa-sitemap"></i>
+                        <span class="font-weight-bold">Danh mục hệ thống</span>
+                        <i class="right fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="collapse-sub" id="_one">
+                        <div class="sidebar-collapse dflex">
+                            <i class="fa fa-cog bg-dark text-white p-1 rounded"></i>
+                            <span>Danh mục nhóm quyền</span>
+                        </div>
+                        <div class="sidebar-collapse dflex mt-3">
+                            <i class="fa fa-user bg-dark text-white p-1 rounded"></i>
+                            <span>Danh mục người dùng</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="sidebar-position">
                     <div class="dflex">
                         <i class="left fa fa-address-card"></i>
                         <span class="font-weight-bold">Quản lý người dùng</span>
-                        <!-- <i class="right fa fa-minus" aria-hidden="true"></i> -->
+                        <i class="right fa fa-minus" aria-hidden="true"></i>
                     </div>
-                    <div class="collapse-sub">
+                    <div class="collapse-sub" id="_two">
                         <div class="sidebar-collapse dflex">
-                            <i class="fa fa-cog"></i>
+                            <i class="fa fa-cog bg-dark text-white p-1 rounded"></i>
                             <span>Danh sách nhóm quyền</span>
                         </div>
-                        <div class="sidebar-collapse dflex">
-                            <i class="left fa fa-user"></i>
+                        <div class="sidebar-collapse dflex mt-3">
+                            <i class="fa fa-user bg-dark text-white p-1 rounded"></i>
                             <span>Danh sách người dùng</span>
                         </div>
                     </div>
