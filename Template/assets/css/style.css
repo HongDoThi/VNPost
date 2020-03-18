@@ -197,7 +197,7 @@ header .header__acc i {
 }
 
 .content .content__col:nth-child(1) .sidebar-position:nth-child(3)._mt {
-  margin-top: 65px;
+  margin-top: 70px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
