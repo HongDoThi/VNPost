@@ -157,23 +157,11 @@ header {
                 align-items: center;
                 justify-content: center;
                 .collapse-sub#_one {
-                    .sidebar-collapse {
-                        span {
-                            display: block;
-                        }
-                    }
                     &.show {
                         .sidebar-collapse {
                             span {
                                 display: block;
                             }
-                        }
-                    }
-                }
-                .collapse-sub#_one {
-                    .sidebar-collapse {
-                        span {
-                            display: none;
                         }
                     }
                 }
@@ -186,7 +174,7 @@ header {
                     justify-content: center;
                 }
                 .collapse-sub {
-                    transition: all 0.5s;
+                    // transition: all 0.5s;
                     &:first-child {
                         &.show {
                             opacity: 1;
@@ -197,12 +185,6 @@ header {
                         }
                     }
                     &:nth-child(2) {
-                        opacity: 1;
-                        height: auto;
-                        &.hidden {
-                            height: 0;
-                            opacity: 0;
-                        }
                         &.pd {
                             padding-left: 20px;
                         }
