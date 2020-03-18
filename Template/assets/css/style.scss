@@ -166,7 +166,10 @@ header {
                     }
                 }
                 &:nth-child(3) {
-                    margin-top: 65px;
+                    &._mt {
+                        margin-top: 65px;
+                        transition: 0.4s;
+                    }
                 }
                 .dflex {
                     height: 100%;

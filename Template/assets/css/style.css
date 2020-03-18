@@ -196,8 +196,10 @@ header .header__acc i {
   display: block;
 }
 
-.content .content__col:nth-child(1) .sidebar-position:nth-child(3) {
+.content .content__col:nth-child(1) .sidebar-position:nth-child(3)._mt {
   margin-top: 65px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .content .content__col:nth-child(1) .sidebar-position .dflex {
