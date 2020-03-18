@@ -199,8 +199,8 @@ header .header__acc i {
 .content .content__col:nth-child(1) .sidebar-position:nth-child(3) {
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  -webkit-transition-delay: 5s;
-          transition-delay: 5s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
 .content .content__col:nth-child(1) .sidebar-position:nth-child(3)._mt {
