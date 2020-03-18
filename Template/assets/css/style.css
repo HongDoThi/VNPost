@@ -171,7 +171,7 @@ header .header__acc i {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 15px 12px 15px;
+  padding: 15px 17px 15px;
   background-color: #007bff;
   color: white;
 }
@@ -196,10 +196,15 @@ header .header__acc i {
   display: block;
 }
 
-.content .content__col:nth-child(1) .sidebar-position:nth-child(3)._mt {
-  margin-top: 70px;
+.content .content__col:nth-child(1) .sidebar-position:nth-child(3) {
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-transition-delay: 5s;
+          transition-delay: 5s;
+}
+
+.content .content__col:nth-child(1) .sidebar-position:nth-child(3)._mt {
+  margin-top: 70px;
 }
 
 .content .content__col:nth-child(1) .sidebar-position .dflex {
